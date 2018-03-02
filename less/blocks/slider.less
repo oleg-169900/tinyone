@@ -1,0 +1,38 @@
+.slider {
+  overflow: hidden;
+}
+
+.slider__list {
+  position: relative;
+  display: flex;
+  width: 300%;
+  transition-duration: 1s;
+}
+
+.slider__item {
+  width: 940px;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.slider__toggle {
+  width: 14px;
+  height: 14px;
+  margin: 0 5px;
+
+  background-color: #ffffff;
+  opacity: 0.5;
+
+  outline: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.slider__toggle--active {
+  opacity: 1;
+}

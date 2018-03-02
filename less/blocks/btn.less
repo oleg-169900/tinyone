@@ -1,0 +1,33 @@
+.btn {
+  margin-top: 32px;
+  padding: 10px 25px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  height: 18px;
+  margin-left: 20px;
+
+  background: url("../img/download-pic.png") no-repeat;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.btn:hover.btn::after {
+  background: url("../img/download-pic.png") no-repeat 0 -19px;
+}
