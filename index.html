@@ -36,7 +36,7 @@
       <section class="page-heading">
         <h2 class="page-heading__title  hidden">Slider</h2>
         <div class="slider  center">
-          <ul class="slider__list">
+          <ul class="slider__list  no-js">
             <li class="page-heading__inner  slider__item">
               <div class="page-heading__text  field-text">
                 <h2 class="field-text__title">Inspire your inspiration</h2>
@@ -208,6 +208,8 @@
       var sliderToggle2 = document.querySelector('#slider__toggle2');
       var sliderToggle3 = document.querySelector('#slider__toggle3');
       var sliderList = document.querySelector('.slider__list');
+
+      sliderList.classList.remove('no-js');
 
       sliderToggle1.onclick = function() {
         sliderToggle2.classList.remove('slider__toggle--active');
